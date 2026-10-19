@@ -53,9 +53,11 @@ and set `GATEWAY_API_TOKEN`.
 ## Tests
 
 There are automated tests for the drivers, expressions, value decoding, data
-loggers and write rules (`npm test`). [Write here what you really tested, for
-example: "I also tried it with a simulator / a real PLC model X".]
+loggers and write rules (`npm test`).
 
+I tested it on Windows with an Omron CJ1 (FINS/TCP), a Siemens S7 PLC and
+SQL Server. The other drivers and databases are only covered by the automatic
+tests, I haven't tried them with real hardware.
 ## Folders
 
 - `src/` - backend code (drivers, poller, web server)
