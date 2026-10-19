@@ -1,0 +1,30 @@
+{
+  "name": "industrial-gateway",
+  "version": "1.0.0",
+  "description": "Industrial Gateway: configurable multi-protocol acquisition, calculated tags, controlled writes, and data logging",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node scripts/check-syntax.js",
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\"",
+    "test:all": "npm run check && npm test",
+    "doctor": "node scripts/doctor.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "dotenv": "16.4.7",
+    "ethernet-ip": "2.0.0",
+    "express": "4.21.2",
+    "modbus-serial": "8.0.25",
+    "mssql": "11.0.1",
+    "mysql2": "3.24.4",
+    "pg": "8.23.1",
+    "node-opcua": "2.150.0",
+    "nodes7": "0.3.18",
+    "omron-fins": "0.5.0",
+    "yaml": "2.7.0"
+  }
+}

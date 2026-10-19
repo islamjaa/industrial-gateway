@@ -1,0 +1,21 @@
+gateway:
+  name: "Industrial Gateway"
+  default_poll_interval_ms: 1000
+  log_level: "info"
+  console_sample_interval_ms: 5000
+  retry_interval_ms: 5000
+
+web:
+  enabled: true
+  host: "127.0.0.1"
+  port: 8080
+  api_token_env: "GATEWAY_API_TOKEN"
+
+catalog:
+  file: "./data/catalog.json"
+
+dataloggers:
+  file: "./data/dataloggers.json"
+
+writes:
+  enabled: true
